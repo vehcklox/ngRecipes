@@ -1,8 +1,9 @@
-<div class="row">
+<div class="row mt-4">
   <div class="col">
     <button class="btn btn-success">New Recipe</button>
   </div>
 </div>
+<hr>
 <div class="row" *ngFor="let recipe of recipes">
   <div class="col">
     <a href="#" class="list-group-item list-group-item-action flex-row d-flex">
@@ -14,7 +15,6 @@
         <img src="{{ recipe.imagePath }}" alt="{{ recipe.name }}" class="img-fluid" style="max-height: 50px;">
       </div>
     </a>
-<!--    <app-recipe-item></app-recipe-item>-->
   </div>
 </div>
 
