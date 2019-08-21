@@ -1,3 +1,11 @@
-<p>
-  recipe-item works!
-</p>
+<a href="#"
+   class="list-group-item list-group-item-action flex-row d-flex"
+    (click)="onSelected()">
+  <div class="justify-content-between flex-column">
+    <h4 class="mb-1">{{ recipe.name }}</h4>
+    <p class="mb-1">{{ recipe.description }}</p>
+  </div>
+  <div class="justify-content-between ml-auto align-self-center">
+    <img src="{{ recipe.imagePath }}" alt="{{ recipe.name }}" class="img-fluid" style="max-height: 50px;">
+  </div>
+</a>
